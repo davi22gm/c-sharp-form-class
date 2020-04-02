@@ -1,2 +1,2 @@
 # c-sharp-form-class
-These codes lines is used for classes for course in IT - Information Technology.
+The following codes lines are being used for classes and work for a course of IT - Information Technology.
