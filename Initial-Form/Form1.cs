@@ -36,6 +36,8 @@ namespace Initial_Form
             {
                 txtName.Text = "";
                 cmbStatus.SelectedItem = null;
+                txtPhone.Text = "";
+                txtCountry.Text = "";
                 txtEmail.Text = "";
                 txtConEmail.Text = "";
                 txtPass.Text = "";
