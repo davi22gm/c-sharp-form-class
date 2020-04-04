@@ -44,5 +44,10 @@ namespace Initial_Form
                 txtConPass.Text = "";
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
