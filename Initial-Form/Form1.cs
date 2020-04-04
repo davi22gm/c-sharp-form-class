@@ -24,5 +24,23 @@ namespace Initial_Form
                 SendKeys.Send("{TAB}");
             }
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to delete all fields on the form?", "Cancel", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                txtName.Text = "";
+                cmbStatus.SelectedItem = null;
+                txtEmail.Text = "";
+                txtConEmail.Text = "";
+                txtPass.Text = "";
+                txtConPass.Text = "";
+            }
+        }
     }
 }
