@@ -114,7 +114,7 @@
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.txtPass.Location = new System.Drawing.Point(20, 261);
+            this.txtPass.Location = new System.Drawing.Point(20, 259);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(202, 25);
@@ -123,7 +123,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.txtEmail.Location = new System.Drawing.Point(20, 185);
+            this.txtEmail.Location = new System.Drawing.Point(20, 188);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(202, 25);
@@ -132,7 +132,7 @@
             // txtConEmail
             // 
             this.txtConEmail.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.txtConEmail.Location = new System.Drawing.Point(241, 185);
+            this.txtConEmail.Location = new System.Drawing.Point(241, 188);
             this.txtConEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtConEmail.Name = "txtConEmail";
             this.txtConEmail.Size = new System.Drawing.Size(202, 25);
@@ -141,7 +141,7 @@
             // txtConPass
             // 
             this.txtConPass.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.txtConPass.Location = new System.Drawing.Point(241, 261);
+            this.txtConPass.Location = new System.Drawing.Point(241, 259);
             this.txtConPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtConPass.Name = "txtConPass";
             this.txtConPass.Size = new System.Drawing.Size(202, 25);
@@ -162,7 +162,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.lblEmail.Location = new System.Drawing.Point(17, 164);
+            this.lblEmail.Location = new System.Drawing.Point(17, 167);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(50, 17);
@@ -173,7 +173,7 @@
             // 
             this.lblConEmail.AutoSize = true;
             this.lblConEmail.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.lblConEmail.Location = new System.Drawing.Point(238, 164);
+            this.lblConEmail.Location = new System.Drawing.Point(238, 167);
             this.lblConEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConEmail.Name = "lblConEmail";
             this.lblConEmail.Size = new System.Drawing.Size(106, 17);
@@ -184,7 +184,7 @@
             // 
             this.lblPass.AutoSize = true;
             this.lblPass.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.lblPass.Location = new System.Drawing.Point(17, 240);
+            this.lblPass.Location = new System.Drawing.Point(17, 238);
             this.lblPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(74, 17);
@@ -195,7 +195,7 @@
             // 
             this.lblConPass.AutoSize = true;
             this.lblConPass.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.lblConPass.Location = new System.Drawing.Point(238, 240);
+            this.lblConPass.Location = new System.Drawing.Point(238, 238);
             this.lblConPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConPass.Name = "lblConPass";
             this.lblConPass.Size = new System.Drawing.Size(130, 17);
@@ -216,7 +216,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(345, 310);
+            this.btnSave.Location = new System.Drawing.Point(345, 308);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(98, 34);
@@ -228,7 +228,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(223, 310);
+            this.btnDelete.Location = new System.Drawing.Point(223, 308);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(98, 34);
@@ -241,7 +241,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 366);
+            this.ClientSize = new System.Drawing.Size(460, 358);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblStatus);
