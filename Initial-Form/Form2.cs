@@ -29,12 +29,10 @@ namespace Initial_Form
         public string Country { get; set; }
         public string Email { get; set; }
         public string ConEmail { get; set; }
-        public string Pass { get; set; }
-        public string ConPass { get; set; }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            if (!this.Naame.Equals(""))
+            if (!this.Naame.Equals(" "))
             {
                 txtNaame.Text = this.Naame;
             }
@@ -68,6 +66,11 @@ namespace Initial_Form
             {
                 txtConEmail.Text = this.ConEmail;
             }
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

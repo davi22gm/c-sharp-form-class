@@ -35,7 +35,6 @@
             this.txtConEmail = new System.Windows.Forms.TextBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.txtGender = new System.Windows.Forms.TextBox();
-            this.txtNaame = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,12 +43,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.txtNaame = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(123, 260);
+            this.btnClose.Location = new System.Drawing.Point(60, 260);
             this.btnClose.Margin = new System.Windows.Forms.Padding(5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(131, 44);
@@ -93,6 +94,7 @@
             this.txtStatus.BackColor = System.Drawing.SystemColors.Control;
             this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtStatus.Enabled = false;
+            this.txtStatus.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtStatus.Location = new System.Drawing.Point(123, 93);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(108, 18);
@@ -107,16 +109,6 @@
             this.txtGender.Name = "txtGender";
             this.txtGender.Size = new System.Drawing.Size(151, 18);
             this.txtGender.TabIndex = 48;
-            // 
-            // txtNaame
-            // 
-            this.txtNaame.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNaame.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNaame.Enabled = false;
-            this.txtNaame.Location = new System.Drawing.Point(67, 31);
-            this.txtNaame.Name = "txtNaame";
-            this.txtNaame.Size = new System.Drawing.Size(300, 18);
-            this.txtNaame.TabIndex = 47;
             // 
             // label21
             // 
@@ -198,11 +190,34 @@
             this.label1.TabIndex = 54;
             this.label1.Text = "E-mail";
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.Location = new System.Drawing.Point(201, 260);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(5);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(131, 44);
+            this.btnReturn.TabIndex = 56;
+            this.btnReturn.Text = "Return";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // txtNaame
+            // 
+            this.txtNaame.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNaame.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNaame.Enabled = false;
+            this.txtNaame.Location = new System.Drawing.Point(67, 31);
+            this.txtNaame.Name = "txtNaame";
+            this.txtNaame.Size = new System.Drawing.Size(300, 18);
+            this.txtNaame.TabIndex = 47;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 318);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCountry);
@@ -239,7 +254,6 @@
         private System.Windows.Forms.TextBox txtConEmail;
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.TextBox txtGender;
-        private System.Windows.Forms.TextBox txtNaame;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
@@ -248,5 +262,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.TextBox txtNaame;
     }
 }

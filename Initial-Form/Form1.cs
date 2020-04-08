@@ -35,8 +35,8 @@ namespace Initial_Form
             register.Country = txtCountry.Text;
             register.Email = txtEmail.Text;
             register.ConEmail = txtConEmail.Text;
-            register.Pass = txtPass.Text;
-            register.ConPass = txtConPass.Text;
+
+            register.Show();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
