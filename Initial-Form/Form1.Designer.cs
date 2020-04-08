@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.rdbFemale = new System.Windows.Forms.RadioButton();
-            this.rdbMale = new System.Windows.Forms.RadioButton();
-            this.rdbOther = new System.Windows.Forms.RadioButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.txtNaame = new System.Windows.Forms.TextBox();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -50,55 +48,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtName
+            // txtNaame
             // 
-            this.txtName.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.txtName.Location = new System.Drawing.Point(20, 50);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(423, 25);
-            this.txtName.TabIndex = 0;
-            // 
-            // rdbFemale
-            // 
-            this.rdbFemale.AutoSize = true;
-            this.rdbFemale.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.rdbFemale.Location = new System.Drawing.Point(20, 114);
-            this.rdbFemale.Margin = new System.Windows.Forms.Padding(4);
-            this.rdbFemale.Name = "rdbFemale";
-            this.rdbFemale.Size = new System.Drawing.Size(75, 21);
-            this.rdbFemale.TabIndex = 1;
-            this.rdbFemale.TabStop = true;
-            this.rdbFemale.Text = "Female";
-            this.rdbFemale.UseVisualStyleBackColor = true;
-            // 
-            // rdbMale
-            // 
-            this.rdbMale.AutoSize = true;
-            this.rdbMale.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.rdbMale.Location = new System.Drawing.Point(103, 114);
-            this.rdbMale.Margin = new System.Windows.Forms.Padding(4);
-            this.rdbMale.Name = "rdbMale";
-            this.rdbMale.Size = new System.Drawing.Size(56, 21);
-            this.rdbMale.TabIndex = 2;
-            this.rdbMale.TabStop = true;
-            this.rdbMale.Text = "Male";
-            this.rdbMale.UseVisualStyleBackColor = true;
-            // 
-            // rdbOther
-            // 
-            this.rdbOther.AutoSize = true;
-            this.rdbOther.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.rdbOther.Location = new System.Drawing.Point(167, 114);
-            this.rdbOther.Margin = new System.Windows.Forms.Padding(4);
-            this.rdbOther.Name = "rdbOther";
-            this.rdbOther.Size = new System.Drawing.Size(63, 21);
-            this.rdbOther.TabIndex = 3;
-            this.rdbOther.TabStop = true;
-            this.rdbOther.Text = "Other";
-            this.rdbOther.UseVisualStyleBackColor = true;
+            this.txtNaame.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.txtNaame.Location = new System.Drawing.Point(20, 50);
+            this.txtNaame.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNaame.Name = "txtNaame";
+            this.txtNaame.Size = new System.Drawing.Size(423, 25);
+            this.txtNaame.TabIndex = 0;
             // 
             // cmbStatus
             // 
@@ -110,10 +71,10 @@
             "Married",
             "Divorced",
             "Widow"});
-            this.cmbStatus.Location = new System.Drawing.Point(283, 114);
+            this.cmbStatus.Location = new System.Drawing.Point(241, 114);
             this.cmbStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(160, 25);
+            this.cmbStatus.Size = new System.Drawing.Size(202, 25);
             this.cmbStatus.TabIndex = 4;
             // 
             // txtPass
@@ -211,7 +172,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.lblStatus.Location = new System.Drawing.Point(280, 93);
+            this.lblStatus.Location = new System.Drawing.Point(238, 93);
             this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(100, 17);
@@ -294,11 +255,39 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // cmbGender
+            // 
+            this.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGender.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Female",
+            "Male",
+            "Other"});
+            this.cmbGender.Location = new System.Drawing.Point(20, 114);
+            this.cmbGender.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(202, 25);
+            this.cmbGender.TabIndex = 21;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.label3.Location = new System.Drawing.Point(17, 93);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 17);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Gender:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 416);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cmbGender);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -317,14 +306,14 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.cmbStatus);
-            this.Controls.Add(this.rdbOther);
-            this.Controls.Add(this.rdbMale);
-            this.Controls.Add(this.rdbFemale);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtNaame);
             this.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registration Form";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -333,10 +322,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.RadioButton rdbFemale;
-        private System.Windows.Forms.RadioButton rdbMale;
-        private System.Windows.Forms.RadioButton rdbOther;
+        private System.Windows.Forms.TextBox txtNaame;
         private System.Windows.Forms.ComboBox cmbStatus;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.TextBox txtEmail;
@@ -355,6 +341,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.ComboBox cmbGender;
+        private System.Windows.Forms.Label label3;
     }
 }
 

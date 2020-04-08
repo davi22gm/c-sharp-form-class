@@ -27,14 +27,24 @@ namespace Initial_Form
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            Form2 register = new Form2(); //Open Register Form
+            register.Naame = txtNaame.Text;
+            register.Gender = cmbGender.Text;
+            register.Status = cmbStatus.Text;
+            register.Phone = txtPhone.Text;
+            register.Country = txtCountry.Text;
+            register.Email = txtEmail.Text;
+            register.ConEmail = txtConEmail.Text;
+            register.Pass = txtPass.Text;
+            register.ConPass = txtConPass.Text;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to delete all fields on the form?", "Cancel", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                txtName.Text = "";
+                txtNaame.Text = "";
+                cmbGender.SelectedItem = null;
                 cmbStatus.SelectedItem = null;
                 txtPhone.Text = "";
                 txtCountry.Text = "";
