@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Initial_Form
 {
-    public partial class Form1 : Form
+    public partial class Customer : Form
     {
-        public Form1()
+        public Customer()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace Initial_Form
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Form2 register = new Form2(); //Open Register Form
+            Login register = new Login(); //Open Register Form
             register.Naame = txtNaame.Text;
             register.Gender = cmbGender.Text;
             register.Status = cmbStatus.Text;

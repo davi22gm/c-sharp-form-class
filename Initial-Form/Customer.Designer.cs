@@ -1,6 +1,6 @@
 ﻿namespace Initial_Form
 {
-    partial class Form1
+    partial class Customer
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             this.txtNaame = new System.Windows.Forms.TextBox();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -281,7 +281,7 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Gender:";
             // 
-            // Form1
+            // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -311,7 +311,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "Customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration Form";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
