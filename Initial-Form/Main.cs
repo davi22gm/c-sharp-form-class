@@ -17,9 +17,28 @@ namespace Initial_Form
             InitializeComponent();
         }
 
-        private void mnuSair_Click(object sender, EventArgs e)
+        private void mnuClose_Click(object sender, EventArgs e)
         {
-            Application.Exit()
+            this.Close();
+        }
+
+        private void mnuIndividualPerson_Click(object sender, EventArgs e)
+        {
+            RCustomer form = new RCustomer();
+            form.Show();
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Close application", "Warning", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Environment.Exit(4);
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

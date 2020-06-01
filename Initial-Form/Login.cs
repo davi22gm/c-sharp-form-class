@@ -17,60 +17,51 @@ namespace Initial_Form
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        public string Naame { get; set; }
-        public string Gender { get; set; }
-        public string Status { get; set; }
-        public string Phone { get; set; }
-        public string Country { get; set; }
-        public string Email { get; set; }
-        public string ConEmail { get; set; }
-
-        private void Form2_Load(object sender, EventArgs e)
+        private void Login_KeyDown(object sender, KeyEventArgs e)
         {
-            if (!this.Naame.Equals(" "))
+            if (e.KeyCode == Keys.Enter)
             {
-                txtNaame.Text = this.Naame;
-            }
-
-            if (!this.Gender.Equals(""))
-            {
-                txtGender.Text = this.Gender;
-            }
-
-            if (!this.Status.Equals(""))
-            {
-                txtStatus.Text = this.Status;
-            }
-
-            if (!this.Phone.Equals(""))
-            {
-                txtPhone.Text = this.Phone;
-            }
-
-            if (!this.Country.Equals(""))
-            {
-                txtCountry.Text = this.Country;
-            }
-
-            if (!this.Email.Equals(""))
-            {
-                txtEmail.Text = this.Email;
-            }
-
-            if (!this.ConEmail.Equals(""))
-            {
-                txtConEmail.Text = this.ConEmail;
+                SendKeys.Send("{TAB}");
             }
         }
 
-        private void btnReturn_Click(object sender, EventArgs e)
+        private void btnEnter_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (txtLogin.Text == "" || txtPassword.Text == "")
+            {
+                MessageBox.Show("Required fields");
+            }
+            else
+            {
+                if (txtLogin.Text == "davi" && txtPassword.Text == "1122")
+                {
+                    this.Hide();
+                    Main frm = new Main();
+                    frm.Closed += (s, args) => this.Close();
+                    frm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Login not found");
+                }
+            }
+        }
+
+        private void btnShowPass_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = '*';
+            }
         }
     }
 }
